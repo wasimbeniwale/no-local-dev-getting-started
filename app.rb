@@ -21,7 +21,7 @@ end
 
 get "/opportunities" do
   @opportunities = Opportunity.all
-  erb :index
+  erb :opportunity
 end
 
 get "/create" do
