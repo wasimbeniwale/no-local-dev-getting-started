@@ -19,6 +19,11 @@ get "/contacts" do
   erb :index
 end
 
+get "/opportunities" do
+  @opportunities = Opportunity.all
+  erb :index
+end
+
 get "/create" do
   dashboard_url = 'https://dashboard.heroku.com/'
   match = /(.*?)\.herokuapp\.com/.match(request.host)
