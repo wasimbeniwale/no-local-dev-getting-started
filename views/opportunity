@@ -1,0 +1,19 @@
+<div class="container">
+
+  <table class="table table-striped table-bordered">
+    <tr>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>IsWon</th>
+    </tr>
+
+    <% @opportunities.each do |opportunity| %>
+      <tr>
+        <td><%= opportunity.Name %></td>
+        <td><%= opportunity.Amount %></td>
+        <td><%= opportunity.IsWon %></td>
+      </tr>
+    <% end %>
+  </table>
+
+</div>
